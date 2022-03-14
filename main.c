@@ -1,27 +1,29 @@
 #include <stdio.h>
 
+    typedef int integer_num; // int num bikolpo variables
+    typedef char charecter; // char to charecter name assign
+
+    typedef struct person
+{
+    charecter name[20];
+    integer_num height;
+    integer_num weight;
+}Person; //person struct person er demo short type
+
+
 int main(){
     
-    int a;
-    scanf("%d", &a);
 
-    switch (a)
-    {
-    case 1:
-        printf("Friday");
-        break;
-    case 2:
-        printf("SatarDay");
-        break;
+    Person demoPerson;
 
-    case 3:
-        printf("Sunday");
-        break;
-    
-    default:
-        printf("Error");
-        break;
-    }
+    demoPerson.name='C';
+    demoPerson.height = 5.0;
+    demoPerson.weight = 65;
 
-    return 0;
+    printf("%c", demoPerson.name);
+    printf("%d\n", demoPerson.height);
+    printf("%d\n", demoPerson.weight);
+
+
+    getchar();
 }
